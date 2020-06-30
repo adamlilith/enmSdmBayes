@@ -2,7 +2,6 @@
 #
 #    enmSdmBayes - R Shiny UI
 #    by Helgasoft for www.earthSkySea.org
-#    built June 2020
 #
 #******************************************
 
@@ -316,7 +315,7 @@ server <- function(input, output, session) {
 # ------- modPrep ----
 
 			observeEvent(input$modPrep, {
-        
+
 			  # validate numeric params
 			  tmp <- ''
 			  if (!(input$texpand >= 0.01 & input$texpand <=1))
@@ -450,7 +449,7 @@ server <- function(input, output, session) {
 			      input$ddetect==''))
 			    ) { enable('tburn'); enable('titer'); enable('tthin'); enable('model') }
 			})
-			
+
 # ------- modeling ---------------
 
 	observeEvent(input$model, {
